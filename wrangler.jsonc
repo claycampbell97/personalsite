@@ -1,0 +1,10 @@
+// Cloudflare deploy config: serves everything in ./site as a static site.
+// /books serves books.html, and unknown paths get site/404.html.
+{
+  "name": "personalsite",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  }
+}
